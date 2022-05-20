@@ -2,42 +2,42 @@
     "rights": [
         {
             "id": 1001,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "首页",
             "key": "/mgmt/home",
             "grade": 1
         },
         {
             "id": 1002,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "用户管理",
             "key": "user",
             "grade": 1
         },
         {
             "id": 1003,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "权限管理",
             "key": "role",
             "grade": 1
         },
         {
             "id": 1005,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "新闻管理",
             "key": "news",
             "grade": 1
         },
         {
             "id": 1006,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "审核管理",
             "key": "verify",
             "grade": 1
         },
         {
             "id": 1007,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "发布管理",
             "key": "publish",
             "grade": 1
@@ -46,7 +46,7 @@
     "children": [
         {
             "id": 2001,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "用户列表",
             "key": "/mgmt/user",
             "grade": 2,
@@ -75,7 +75,7 @@
         },
         {
             "id": 2006,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "角色列表",
             "key": "/mgmt/role",
             "grade": 2,
@@ -83,15 +83,15 @@
         },
         {
             "id": 2002,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "权限列表",
-            "key": "/mgmt/user",
+            "key": "/mgmt/permission",
             "grade": 2,
             "rightId": 1003
         },
         {
             "id": 2007,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "撰写新闻",
             "key": "/mgmt/news/write",
             "grade": 2,
@@ -99,23 +99,23 @@
         },
         {
             "id": 2008,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "草稿箱",
-            "key": "/mgmt/news/write",
+            "key": "/mgmt/news/draft",
             "grade": 2,
             "rightId": 1005
         },
         {
             "id": 2009,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "新闻分类",
-            "key": "/mgmt/news/write",
+            "key": "/mgmt/news/category",
             "grade": 2,
             "rightId": 1005
         },
         {
             "id": 2010,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "审核新闻",
             "key": "/mgmt/verify/news",
             "grade": 2,
@@ -123,33 +123,33 @@
         },
         {
             "id": 2011,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "审核列表",
-            "key": "/mgmt/verify/news",
+            "key": "/mgmt/verify/list",
             "grade": 2,
             "rightId": 1006
         },
         {
             "id": 2014,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "待发布",
-            "key": "/mgmt/verify/news",
+            "key": "/mgmt/publish/before",
             "grade": 2,
             "rightId": 1007
         },
         {
             "id": 2012,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "已发布",
-            "key": "/mgmt/verify/news",
+            "key": "/mgmt/publish/done",
             "grade": 2,
             "rightId": 1007
         },
         {
             "id": 2013,
-            "pagePermission": 1,
+            "pagepermission": 1,
             "title": "已下线",
-            "key": "/mgmt/verify/news",
+            "key": "/mgmt/publish/remove",
             "grade": 2,
             "rightId": 1007
         }
