@@ -1,157 +1,533 @@
 {
-    "rights": [
-        {
-            "id": 1001,
-            "pagepermission": 1,
-            "title": "首页",
-            "key": "/mgmt/home",
-            "grade": 1
-        },
-        {
-            "id": 1002,
-            "pagepermission": 1,
-            "title": "用户管理",
-            "key": "user",
-            "grade": 1
-        },
-        {
-            "id": 1003,
-            "pagepermission": 1,
-            "title": "权限管理",
-            "key": "role",
-            "grade": 1
-        },
-        {
-            "id": 1005,
-            "pagepermission": 1,
-            "title": "新闻管理",
-            "key": "news",
-            "grade": 1
-        },
-        {
-            "id": 1006,
-            "pagepermission": 1,
-            "title": "审核管理",
-            "key": "verify",
-            "grade": 1
-        },
-        {
-            "id": 1007,
-            "pagepermission": 1,
-            "title": "发布管理",
-            "key": "publish",
-            "grade": 1
-        }
-    ],
-    "children": [
-        {
-            "id": 2001,
-            "pagepermission": 1,
-            "title": "用户列表",
-            "key": "/mgmt/user",
-            "grade": 2,
-            "rightId": 1002
-        },
-        {
-            "id": 2003,
-            "title": "添加用户",
-            "key": "/mgmt/user/add",
-            "grade": 2,
-            "rightId": 1002
-        },
-        {
-            "id": 2005,
-            "title": "修改用户",
-            "key": "/mgmt/user/update",
-            "grade": 2,
-            "rightId": 1002
-        },
-        {
-            "id": 2004,
-            "title": "删除用户",
-            "key": "/mgmt/user/delete",
-            "grade": 2,
-            "rightId": 1002
-        },
-        {
-            "id": 2006,
-            "pagepermission": 1,
-            "title": "角色列表",
-            "key": "/mgmt/role",
-            "grade": 2,
-            "rightId": 1003
-        },
-        {
-            "id": 2002,
-            "pagepermission": 1,
-            "title": "权限列表",
-            "key": "/mgmt/permission",
-            "grade": 2,
-            "rightId": 1003
-        },
-        {
-            "id": 2007,
-            "pagepermission": 1,
-            "title": "撰写新闻",
-            "key": "/mgmt/news/write",
-            "grade": 2,
-            "rightId": 1005
-        },
-        {
-            "id": 2008,
-            "pagepermission": 1,
-            "title": "草稿箱",
-            "key": "/mgmt/news/draft",
-            "grade": 2,
-            "rightId": 1005
-        },
-        {
-            "id": 2009,
-            "pagepermission": 1,
-            "title": "新闻分类",
-            "key": "/mgmt/news/category",
-            "grade": 2,
-            "rightId": 1005
-        },
-        {
-            "id": 2010,
-            "pagepermission": 1,
-            "title": "审核新闻",
-            "key": "/mgmt/verify/news",
-            "grade": 2,
-            "rightId": 1006
-        },
-        {
-            "id": 2011,
-            "pagepermission": 1,
-            "title": "审核列表",
-            "key": "/mgmt/verify/list",
-            "grade": 2,
-            "rightId": 1006
-        },
-        {
-            "id": 2014,
-            "pagepermission": 1,
-            "title": "待发布",
-            "key": "/mgmt/publish/before",
-            "grade": 2,
-            "rightId": 1007
-        },
-        {
-            "id": 2012,
-            "pagepermission": 1,
-            "title": "已发布",
-            "key": "/mgmt/publish/done",
-            "grade": 2,
-            "rightId": 1007
-        },
-        {
-            "id": 2013,
-            "pagepermission": 1,
-            "title": "已下线",
-            "key": "/mgmt/publish/remove",
-            "grade": 2,
-            "rightId": 1007
-        }
-    ]
+  "rights": [
+    {
+      "id": 1001,
+      "pagepermission": 1,
+      "title": "首页",
+      "key": "/home",
+      "grade": 1
+    },
+    {
+      "id": 1002,
+      "pagepermission": 1,
+      "title": "用户管理",
+      "key": "/user-manage",
+      "grade": 1
+    },
+    {
+      "id": 1003,
+      "pagepermission": 1,
+      "title": "权限管理",
+      "key": "/right-manage",
+      "grade": 1
+    },
+    {
+      "id": 1005,
+      "pagepermission": 1,
+      "title": "文章管理",
+      "key": "/news-manage",
+      "grade": 1
+    },
+    {
+      "id": 1006,
+      "pagepermission": 1,
+      "title": "审核管理",
+      "key": "/verify-manage",
+      "grade": 1
+    },
+    {
+      "id": 1007,
+      "pagepermission": 1,
+      "title": "发布管理",
+      "key": "/publish-manage",
+      "grade": 1
+    }
+  ],
+  "children": [
+    {
+      "id": 2001,
+      "pagepermission": 1,
+      "title": "用户列表",
+      "key": "/user-manage/list",
+      "grade": 2,
+      "rightId": 1002
+    },
+    {
+      "id": 2003,
+      "title": "添加用户",
+      "key": "/user-manage/add",
+      "grade": 2,
+      "rightId": 1002
+    },
+    {
+      "id": 2005,
+      "title": "修改用户",
+      "key": "/user-manage/update",
+      "grade": 2,
+      "rightId": 1002
+    },
+    {
+      "id": 2004,
+      "title": "删除用户",
+      "key": "/user-manage/delete",
+      "grade": 2,
+      "rightId": 1002
+    },
+    {
+      "id": 2006,
+      "pagepermission": 1,
+      "title": "角色列表",
+      "key": "/right-manage/role-list",
+      "grade": 2,
+      "rightId": 1003
+    },
+    {
+      "id": 2002,
+      "pagepermission": 1,
+      "title": "权限列表",
+      "key": "/right-manage/right-list",
+      "grade": 2,
+      "rightId": 1003
+    },
+    {
+      "id": 2007,
+      "pagepermission": 1,
+      "title": "撰写文章",
+      "key": "/news-manage/write",
+      "grade": 2,
+      "rightId": 1005
+    },
+    {
+      "id": 2008,
+      "pagepermission": 1,
+      "title": "草稿箱",
+      "key": "/news-manage/draft",
+      "grade": 2,
+      "rightId": 1005
+    },
+    {
+      "id": 2009,
+      "pagepermission": 1,
+      "title": "文章分类",
+      "key": "/news-manage/category",
+      "grade": 2,
+      "rightId": 1005
+    },
+    {
+      "id": 2019,
+      "title": "文章预览",
+      "key": "/news-manage/preview/:id",
+      "grade": 2,
+      "rightId": 1005,
+      "routerpermission": 1
+    },
+    {
+      "id": 2020,
+      "title": "文章更新",
+      "key": "/news-manage/update/:id",
+      "grade": 2,
+      "rightId": 1005,
+      "routerpermission": 1
+    },
+    {
+      "id": 2010,
+      "pagepermission": 1,
+      "title": "审核文章",
+      "key": "/verify-manage/news",
+      "grade": 2,
+      "rightId": 1006
+    },
+    {
+      "id": 2011,
+      "pagepermission": 1,
+      "title": "审核列表",
+      "key": "/verify-manage/list",
+      "grade": 2,
+      "rightId": 1006
+    },
+    {
+      "id": 2014,
+      "pagepermission": 1,
+      "title": "待发布",
+      "key": "/publish-manage/before",
+      "grade": 2,
+      "rightId": 1007
+    },
+    {
+      "id": 2012,
+      "pagepermission": 1,
+      "title": "已发布",
+      "key": "/publish-manage/done",
+      "grade": 2,
+      "rightId": 1007
+    },
+    {
+      "id": 2013,
+      "pagepermission": 1,
+      "title": "已下线",
+      "key": "/publish-manage/removed",
+      "grade": 2,
+      "rightId": 1007
+    }
+  ],
+  "roles": [
+    {
+      "id": 1001,
+      "roleName": "超级管理员",
+      "roleType": 1,
+      "rights": [
+        "/user-manage",
+        "/user-manage/add",
+        "/user-manage/update",
+        "/user-manage/delete",
+        "/user-manage/list",
+        "/right-manage",
+        "/right-manage/role-list",
+        "/right-manage/right-list",
+        "/right-manage/role-update",
+        "/right-manage/role-delete",
+        "/right-manage/right-update",
+        "/right-manage/right-delete",
+        "/news-manage",
+        "/news-manage/list",
+        "/news-manage/add",
+        "/news-manage/update/:id",
+        "/news-manage/preview/:id",
+        "/news-manage/draft",
+        "/news-manage/category",
+        "/verify-manage",
+        "/verify-manage/list",
+        "/verify-manage/news",
+        "/publish-manage",
+        "/publish-manage/before",
+        "/publish-manage/done",
+        "/publish-manage/removed",
+        "/home",
+        "/news-manage/write"
+      ]
+    },
+    {
+      "id": 1002,
+      "roleName": "区域管理员",
+      "roleType": 2,
+      "rights": [
+        "/right-manage/role-update",
+        "/right-manage/role-delete",
+        "/right-manage/right-update",
+        "/right-manage/right-delete",
+        "/news-manage",
+        "/news-manage/list",
+        "/news-manage/add",
+        "/news-manage/update/:id",
+        "/news-manage/preview/:id",
+        "/news-manage/draft",
+        "/news-manage/category",
+        "/verify-manage",
+        "/verify-manage/list",
+        "/verify-manage/news",
+        "/publish-manage",
+        "/publish-manage/before",
+        "/publish-manage/done",
+        "/publish-manage/removed",
+        "/home",
+        "/news-manage/write",
+        "/user-manage",
+        "/user-manage/list",
+        "/user-manage/add",
+        "/user-manage/update",
+        "/user-manage/delete"
+      ]
+    },
+    {
+      "id": 1003,
+      "roleName": "区域编辑",
+      "roleType": 3,
+      "rights": [
+        "/news-manage",
+        "/news-manage/list",
+        "/news-manage/add",
+        "/news-manage/update/:id",
+        "/news-manage/preview/:id",
+        "/news-manage/draft",
+        "/news-manage/category",
+        "/verify-manage",
+        "/verify-manage/list",
+        "/publish-manage",
+        "/publish-manage/before",
+        "/publish-manage/done",
+        "/publish-manage/removed",
+        "/home",
+        "/news-manage/write"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123456",
+      "roleState": true,
+      "default": true,
+      "region": "",
+      "roleId": 1001
+    },
+    {
+      "id": 2,
+      "username": "亚洲管理员",
+      "password": "123",
+      "roleState": true,
+      "default": false,
+      "region": "亚洲",
+      "roleId": 1002
+    },
+    {
+      "username": "亚洲编辑",
+      "password": "123",
+      "roleId": 1003,
+      "region": "亚洲",
+      "id": 13794,
+      "default": false,
+      "roleState": true
+    },
+    {
+      "username": "亚洲编辑2",
+      "password": "123",
+      "roleId": 1003,
+      "region": "亚洲",
+      "id": 85143,
+      "default": false,
+      "roleState": true
+    }
+  ],
+  "regions": [
+    {
+      "id": 1,
+      "title": "亚洲",
+      "value": "亚洲"
+    },
+    {
+      "id": 2,
+      "title": "欧洲",
+      "value": "欧洲"
+    },
+    {
+      "id": 3,
+      "title": "北美洲",
+      "value": "北美洲"
+    },
+    {
+      "id": 4,
+      "title": "南美洲",
+      "value": "南美洲"
+    },
+    {
+      "id": 5,
+      "title": "非洲",
+      "value": "非洲"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "时事文章",
+      "value": "时事文章"
+    },
+    {
+      "id": 2,
+      "title": "环球经济",
+      "value": "环球经济"
+    },
+    {
+      "id": 3,
+      "title": "科学技术",
+      "value": "科学技术"
+    },
+    {
+      "id": 4,
+      "title": "数据结构",
+      "value": "数据结构"
+    }
+  ],
+  "news": [
+    {
+      "title": "打发打发",
+      "categoryId": 2,
+      "content": "<p>打发手动阀</p>\n",
+      "region": "亚洲",
+      "author": "test002",
+      "roleId": 1002,
+      "verifyState": 3,
+      "publishState": 2,
+      "createTime": 1653306585703,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 13
+    },
+    {
+      "title": "更好的给对方",
+      "categoryId": 2,
+      "content": "<p>广东省分公司分公司</p>\n",
+      "region": "北美洲",
+      "author": "test003",
+      "roleId": 1002,
+      "verifyState": 2,
+      "publishState": 1,
+      "createTime": 1653306605902,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 14
+    },
+    {
+      "title": "aaa",
+      "categoryId": 2,
+      "content": "<p>aaa</p>\n",
+      "region": "亚洲",
+      "author": "test002",
+      "roleId": 1002,
+      "verifyState": 2,
+      "publishState": 0,
+      "createTime": 1653309441621,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 15
+    },
+    {
+      "title": "bbb",
+      "categoryId": 3,
+      "content": "<p>bbb</p>\n",
+      "region": "亚洲",
+      "author": "test002",
+      "roleId": 1002,
+      "verifyState": 2,
+      "publishState": 0,
+      "createTime": 1653309449914,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 16
+    },
+    {
+      "title": "vvv",
+      "categoryId": 2,
+      "content": "<p>vvv</p>\n",
+      "region": "亚洲",
+      "author": "test005",
+      "roleId": 1003,
+      "verifyState": 2,
+      "publishState": 0,
+      "createTime": 1653309838171,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 17
+    },
+    {
+      "title": "nnn",
+      "categoryId": 3,
+      "content": "<p>nnn</p>\n",
+      "region": "亚洲",
+      "author": "test005",
+      "roleId": 1003,
+      "verifyState": 2,
+      "publishState": 0,
+      "createTime": 1653309845737,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 18
+    },
+    {
+      "title": "fffddfas",
+      "categoryId": 2,
+      "content": "<p>fffddfas</p>\n",
+      "region": "亚洲",
+      "author": "test002",
+      "roleId": 1002,
+      "verifyState": 3,
+      "publishState": 0,
+      "createTime": 1653310240680,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 19
+    },
+    {
+      "title": "dfasdfas",
+      "categoryId": 2,
+      "content": "<p>fasdfasd</p>\n",
+      "region": "亚洲",
+      "author": "test002",
+      "roleId": 1002,
+      "verifyState": 3,
+      "publishState": 0,
+      "createTime": 1653310264343,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 20
+    },
+    {
+      "title": "dfadfa",
+      "categoryId": 2,
+      "content": "<p>fasdfasd</p>\n",
+      "region": "亚洲",
+      "author": "test005",
+      "roleId": 1003,
+      "verifyState": 2,
+      "publishState": 0,
+      "createTime": 1653310307429,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 21
+    },
+    {
+      "title": "fsadfasd",
+      "categoryId": 3,
+      "content": "<p>fasdfasdfasd</p>\n",
+      "region": "亚洲",
+      "author": "test005",
+      "roleId": 1003,
+      "verifyState": 2,
+      "publishState": 0,
+      "createTime": 1653310313559,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 22
+    },
+    {
+      "title": "第一篇文章",
+      "categoryId": 3,
+      "content": "<h2>第一篇文章</h2>\n<p></p>\n<p>this is a big idea for test a df ffjalds  d afjl</p>\n",
+      "region": "亚洲",
+      "author": "亚洲编辑",
+      "roleId": 1003,
+      "verifyState": 1,
+      "publishState": 0,
+      "createTime": 1653312965760,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 23
+    },
+    {
+      "title": "cehsi daljsd",
+      "categoryId": 2,
+      "content": "<p>adfasdf</p>\n",
+      "region": "亚洲",
+      "author": "亚洲编辑",
+      "roleId": 1003,
+      "verifyState": 1,
+      "publishState": 0,
+      "createTime": 1653364457880,
+      "start": 0,
+      "view": 0,
+      "publishTime": 0,
+      "id": 24
+    }
+  ]
 }
